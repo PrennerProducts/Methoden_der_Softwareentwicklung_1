@@ -8,14 +8,14 @@ void print_star();
 int main(int argc, char *argv[]) {
     if (argc < 2) {
         printf("ERROR 1, bitte Komandozeilenargument übergeben!"); //Komandozeileneingabecheck
-    return 0;
+    return 1;
     }
     int zahl;
     zahl = atoi(argv[1]); //char cast to int
     //printf("Die uebergebene Zahl ist: %d\n", zahl);
     if(zahl < 0){
-        printf("ERROR, bitte gib eine natürliche Zahl ein.");
-    return 0;
+        printf("ERROR 2, bitte gib eine natürliche Zahl ein.");
+    return 2;
     }
 
 
